@@ -1,0 +1,15 @@
+#leetcode problem no: 2798
+
+class Solution(object):
+    def numberOfEmployeesWhoMetTarget(self, hours, target):
+        """
+        :type hours: List[int]
+        :type target: int
+        :rtype: int
+        """
+        #hours = [0,1,2,3,4], target = 2
+        num_of_emp = 0
+        for hr in hours:
+            if hr >= target:
+                num_of_emp = num_of_emp + 1
+        return num_of_emp 
