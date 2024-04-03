@@ -37,3 +37,6 @@ user1.email = "atiqfaisal11@gmail.com"
 user1.password = "Atik11223344"
 
 user1.login()
+user1.profile()
+
+hello = input()
