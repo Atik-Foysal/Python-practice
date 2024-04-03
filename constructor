@@ -1,0 +1,43 @@
+class user:
+    name = " "
+    email = " "
+    password = " "
+    login = False
+
+    def __init__(self, name, email, password):
+        self.name = name
+        self.email = email
+        self.password = password
+
+    def login(self):
+        email = input("Enter Your Email:")
+        password = input("Enter Your Password:")
+
+        if email == self.email and password == self.password:
+            login = True
+            print("login successful!")
+
+        else:
+            print("login failed!")
+
+    def logOut(self):
+        login = False
+        print("logged out!")
+
+    def isloggedIn(self):
+        if self.login:
+            return True
+        else:
+            return False
+
+    def profile(self):
+        if self.isloggedIn():
+            print(self.name, "-", self.email)
+        else:
+            print("User is not logIn!")                        
+
+user1 = user("Atik", "atiqfaisal11@gmail.com", "Atik11223344")
+user1.login()
+user1.profile()
+
+hello = input()
