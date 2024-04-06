@@ -1,0 +1,21 @@
+#1389. Create Target Array in the Given Order
+
+class Solution(object):
+    def createTargetArray(self, nums, index):
+        """
+        :type nums: List[int]
+        :type index: List[int]
+        :rtype: List[int]
+        """
+        target = []
+        for i in range(len(nums)):
+            target.insert(index[i], nums[i])
+        return target
+
+solution_instance = Solution()
+
+
+nums = [0,1,2,3,4]
+index = [0,1,2,2,1]
+output = solution_instance.createTargetArray(nums, index)
+print(output)  
